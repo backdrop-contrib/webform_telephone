@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_webform_component_info() from Webform.
+ */
+function webform_telephone_webform_component_info() {
+  $components['telephone'] = array(
+    'label' => t('Telephone'),
+    'description' => t('A telephone field.'),
+    'features' => array(
+      'spam_analysis' => TRUE,
+      'placeholder' => TRUE,
+      'conditional_action_set' => TRUE,
+    ),
+    'file' => 'components/telephone.inc',
+  );
+  return $components;
+}

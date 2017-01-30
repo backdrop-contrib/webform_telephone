@@ -1,0 +1,5 @@
+name = Webform Telephone
+description = Adds a Telephone webform component.
+core = 7.x
+package = Webform
+dependencies[] = webform
