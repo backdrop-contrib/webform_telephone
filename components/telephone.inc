@@ -34,7 +34,7 @@ function _webform_theme_telephone() {
     'webform_display_telephone' => array(
       'render element' => 'element',
       'file' => 'components/telephone.inc',
-      'path' => drupal_get_path('module', 'webform_telephone'),
+      'path' => backdrop_get_path('module', 'webform_telephone'),
     ),
   );
 }
@@ -193,7 +193,7 @@ function _webform_analysis_telephone($component, $sids = array(), $single = FALS
 
   $result = $query->execute();
   foreach ($result as $data) {
-    if (drupal_strlen(trim($data['data'])) > 0) {
+    if (backdrop_strlen(trim($data['data'])) > 0) {
       $nonblanks++;
     }
     $submissions++;

@@ -1,5 +1,6 @@
 name = Webform Telephone
 description = Adds a Telephone webform component.
-core = 7.x
+backdrop = 1.x
+type = module
 package = Webform
 dependencies[] = webform
